@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-top: 10px;
-    position: relative;
+    max-width: 1600px;
 
 }
 
@@ -18,6 +17,7 @@ button {
     border: none;
     color: white;
     padding: 16px 32px;
+    cursor: pointer;
 }
 
 .important {
@@ -164,8 +164,6 @@ body {
     color: #F00;
 }
 
-
-
 .welcome_party img {
     right: 138px;
     width: 100%;
@@ -265,7 +263,6 @@ body {
     font-family: 'Inter', sans-serif;
     text-align: center;
     margin: auto;
-    margin-bottom: 30px;
 }
 
 .functional h4 {
@@ -278,6 +275,7 @@ body {
     font-size: 72px;
     font-weight: 900;
     font-family: 'Merriweather', serif;
+    margin: 30px 0;
 }
 
 .functional p {
@@ -286,42 +284,41 @@ body {
     font-weight: 500;
 }
 
-.hard_section {
-    margin-bottom: 40px;
-}
 
-.hard_section .hard_container {
+
+.bonus_section {
     max-width: 1320px;
-    height: 433px;
-    background-image: url(../resources/Rectangle\ 1.png);
-    background-repeat: no-repeat;
-    background-position: right;
-
+    margin-bottom: 30px;
 }
 
-.hard_section .hard_container img {
-    position: absolute;
+.bonus_section .bonus_image_container {
+    height: 600px;
+    display: flex;
+
+}
+.offer_content{
     width: 206px;
-    height: 206px;
-    top: 110px;
-    right: 322px;
+height: 206px;
+margin: auto;
 
 }
 
-.hard_section .red_box {
-    width: 1320px;
-    border-radius: 16px 0px 16px 16px;
-    background-image:url(../resources/Group\ 75.png) ,url(../resources/Rectangle\ 2.png);
-background-repeat: no-repeat;
-background-size: 550px, cover;
-background-position: left;
+.offer_img {
+    position: relative;
+    top: 410px;
+    right: -60px;
 
-    height: 229px;
 }
 
+.gift_box_image {
+    position: relative;
+    bottom: -210px;
+    left: 0;
+}
 
 .best_gift {
     width: 896px;
+    height: auto;
     font-family: 'Inter', sans-serif;
     padding: 10px;
 }
@@ -340,6 +337,7 @@ background-position: left;
     font-family: 'Merriweather', serif;
     font-size: 48px;
     font-weight: 900;
+    margin: 20px 0;
 }
 
 .best_gift p {
@@ -347,6 +345,7 @@ background-position: left;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .image-container_box {
@@ -364,6 +363,10 @@ background-position: left;
 .image-container_box .image-container img {
     border-radius: 8px;
 }
+.image-container_box .image-container img:hover{
+    box-shadow: #f48c9d 8px 6px 8px;
+transform: scale(1.1);
+}
 
 .subscribe {
     max-width: 1320;
@@ -377,7 +380,8 @@ background-position: left;
 
 .subscribe .newsletter_img {
     width: 150px;
-    margin: auto;
+    margin: 20px auto;
+    padding: 40px;
 
 }
 
@@ -397,25 +401,26 @@ background-position: left;
 }
 
 .subscribe form {
-    width: 550px;
-    height: 72px;
+    width: 640px;
     display: flex;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .subscribe input {
     padding: 10px;
-    border: 0;
+    border-radius: 50px 0 0 50px ;
 }
-
+.subscribe button{
+    border-radius: 0 50px 50px 0;
+}
 /* ============ Footer Section Start ============== */
 
 
 #footer_section {
     background: #070211;
-    height: 500px;
+    height: 450px;
     border-radius: 16px;
-    margin-bottom: 0;
+
 
 }
 
@@ -427,7 +432,6 @@ background-position: left;
 #footer_section .footer_container .footer_details_container {
     display: flex;
     justify-content: space-between;
-    margin: auto;
     padding: 40px 0;
 }
 
@@ -441,6 +445,13 @@ background-position: left;
     font-size: 24px;
     font-weight: 500;
 }
+#icon1 img{
+width: 30px;
+height: 30px;
+padding-right: 10px;
+cursor: pointer;
+}
+
 
 #footer_section .footer_container .social_media .social_link {
     width: 60px;
@@ -450,9 +461,14 @@ background-position: left;
     margin: auto;
     padding: 30px 0;
     gap: 15px;
+    cursor: pointer;
 }
 
 #footer_section .footer_container .footer_details_container .footer_details .footer_text a {
     text-decoration: none;
     color: #FFF;
+    
+}
+#footer_section .footer_container .footer_details_container .footer_details .footer_text a:hover{
+    color: #F00;
 }
