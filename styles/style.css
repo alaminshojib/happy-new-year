@@ -165,8 +165,8 @@ body {
 }
 
 .welcome_party img {
-    right: 138px;
-    width: 100%;
+    position: relative;
+    right: 35px;
     opacity: 0.5;
     width: 320px;
     padding-right: 60px;
@@ -290,9 +290,12 @@ body {
 .bonus_section {
     max-width: 1320px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .bonus_section .bonus_image_container {
+    width: 100%;
+    max-width: 1320px;
     height: 600px;
     display: flex;
 
