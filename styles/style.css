@@ -169,6 +169,7 @@ body {
     width: 100%;
     opacity: 0.5;
     width: 320px;
+    padding-right: 60px;
 
 }
 
@@ -419,7 +420,9 @@ transform: scale(1.1);
 #footer_section {
     background: #070211;
     height: 450px;
+    margin: 0 auto;
     border-radius: 16px;
+    position: relative;
 
 
 }
@@ -445,7 +448,7 @@ transform: scale(1.1);
     font-size: 24px;
     font-weight: 500;
 }
-#icon1 img{
+#footer_section .footer_container .footer_details_container .footer_details #icon1 img{
 width: 30px;
 height: 30px;
 padding-right: 10px;
